@@ -19,7 +19,7 @@ from django.urls import include, path
 from blog import views as blog_views
 
 urlpatterns = [
-    path("blog/", blog.views.my_blog, name='blog'),
+    path("blog/", blog_views.my_blog, name='blog'),
     path('admin/', admin.site.urls),
     
 ]
