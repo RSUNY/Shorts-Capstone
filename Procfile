@@ -1,2 +1,2 @@
-web: gunicorn django-project.wsgi
+web: gunicorn codestar.wsgi
 heroku ps:scale
