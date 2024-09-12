@@ -27,7 +27,7 @@ BASE_DIR = Path(__file__).resolve().parent.parent
 SECRET_KEY = 'django-insecure-#*j@3nw_sz@^v71r_(@_jbnfgr*l0=vrn4nj9#$c$&uh@*s753'
 
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = True
+DEBUG = False
 
 ALLOWED_HOSTS = ['8000-rsuny-shortscapstone-m7ppzw9g14v.ws.codeinstitute-ide.net', 
 '.herokuapp.com']
@@ -87,9 +87,10 @@ WSGI_APPLICATION = 'codestar.wsgi.application'
 #         'NAME': BASE_DIR / 'db.sqlite3',
 #     }
 # }
+
 DATABASES = {
     'default': dj_database_url.parse(os.environ.get("postgres://ucag04zla1v:xmRQJ5LfJJES@ep-gentle-mountain-a23bxz6h-pooler.eu-central-1.aws.neon.tech/aloha_zebra_glue_229738"))
-}
+    }
 
 # Password validation
 # https://docs.djangoproject.com/en/4.2/ref/settings/#auth-password-validators
