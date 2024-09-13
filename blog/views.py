@@ -6,4 +6,5 @@ from .models import Post
 
 
 class PostList(generic.ListView):
-    model = Post
+    vqueryset = Post.objects.all()
+    template_name = "post_list.html"
